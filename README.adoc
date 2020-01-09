@@ -1,4 +1,4 @@
-# Tomitribe Totem
+# Totem
 
 Unite all your tribes into one community focused on highlighting individual contributions.
 

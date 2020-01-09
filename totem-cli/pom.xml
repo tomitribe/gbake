@@ -35,7 +35,7 @@
   <dependencies>
     <dependency>
       <groupId>org.tomitribe</groupId>
-      <artifactId>totem-core</artifactId>
+      <artifactId>totem-jbake</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
