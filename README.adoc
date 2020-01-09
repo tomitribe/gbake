@@ -1,0 +1,21 @@
+# Tomitribe Totem
+
+Unite all your tribes into one community focused on highlighting individual contributions.
+
+Totem can create a single, developer-focused, cross-team community site by bringing together content from multiple Git repositories.  Most solutions such as Hugo or vanilla Github pages allow for only a single repository to host content, which greatly limits their usefulness to multi-team or multi-repository applications.  This creates one or both of the following problems:
+
+ - the documentation lives with the code and then there are multiple disconnected sites with no easy way to track them
+ - the documentation lives separately from the repository holding the code and is monolithic, receives low contribution, decays and becomes a maintenance headache.
+
+Totem fixes this by allowing the documentation to live with the code yet still be combined into one generated site backed by Github Pages.  A repository can be included in the Totem generated site by either:
+
+ - applying a `totem` or similar label via Managed Topics on the Github repository description
+ - being included via the central `totem.yml` file
+
+Totem will monitor the individual repositories for changes either via Github webhook or timer and regenerate the site when any of them change.  In addition to any repositories that provide content, Totem needs two specific repos:
+
+ - `templates` - a Github repository that holds JBake html templates used for site generation
+ - `output` - a Github repository where generated content will automatically be committed after generation.  This repository can be served via  Github Pages, Apache HTTPd, Nginx or anything that can serve plain html.
+
+
+
